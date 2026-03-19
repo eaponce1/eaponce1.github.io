@@ -2,31 +2,95 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Página Personal</title>
+    <title>Mi Perfil</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 <div class="container">
 
-    <h1>Buenos dias, Buenas tardes, Buenas noches, mi nombre es Eduardo Andres Ponce Riveros</h1>
+    <h1>Buenos dias, Buenas tardes, Buenas noches, soy Eduardo Andrés Ponce Riveros</h1>
 
     <p class="descripcion">
-        Soy estudiante de Ingeniería Civil Industrial mención financiera en mi último año.
-        Me interesan el análisis de datos, la gestión financiera, la comida y el avance tecnológico.
-        Además, tengo un especial cariño por los animales, especialmente los gatos.
+        Soy estudiante de Ingeniería Civil Industrial mención en finanzas cursando mi último año.
+        En mis estudios he encontrado interes en el análisis de datos, la gestión financiera, la comida y el avance tecnológico.
+        Además, tengo un especial cariño por los animales, especialmente los gatos y perros.
     </p>
 
-    <h2> Mis Intereses o Hobbies</h2>
+    <h2>Información Personal</h2>
+    <p><strong>Nombre:</strong> Eduardo Andrés Ponce Riveros</p>
+    <p><strong>Año de Matriculacion Universitaria:</strong> 2021</p>
+    <p>
+        <strong>Mi GitHub:</strong>
+        <a href="https://github.com/eaponce1" target="_blank">Ver perfil</a>
+    </p>
+
+    <h2>Mis Intereses o Hobbies</h2>
     <ul>
-        <li>La comida, me encanta comer y probar cosas nuevas.</li>
-        <li>Ir al gimnasio, pese a ir al gimnasio, aun no bajo la guata y me veo igual que hace 3 años.</li>
-        <li>Cuando es temporada de verano me encanta el mar, meterme a capear olas y hacer body.</li>
-        <li>Cuando es temporada de invierno me encanta a subir a skiar y con eso, tambien caerme.</li>
-        <li>Me gusta salir a caminar y escuchar todo tipo de musica.</li>
+        <li>La comida, me encanta comer y probar cosas nuevos sabores, sobre todo lo picante.</li>
+        <li>Ir al gimnasio, aunque en estos 3 años aun no bajo la guata y me veo igual.</li>
+        <li>En temporada de verano disfruto el mar, me encanta meterme a capear olas y hacer bodyboard.</li>
+        <li>En temporada de invierno me gusta ir a esquiar y enterrarme en la nieve.</li>
+        <li>Me encanta salir a caminar escuchando musica, todo tipo de musica.</li>
     </ul>
 
+    <h2>Mi imagen</h2>
     <img src="Foto.jpeg" alt="Mi foto" width="200">
 
+    <h2>Habilidades</h2>
+    <table>
+        <tr>
+            <th>Habilidad</th>
+            <th>Nivel</th>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Basico</td>
+        </tr>
+        <tr>
+            <td>SQL</td>
+            <td>Intermedio</td>
+        </tr>
+        <tr>
+            <td>HTML/CSS</td>
+            <td>Básico</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Nulo</td>
+        </tr>
+        <tr>
+            <td>Git</td>
+            <td>Básico</td>
+        </tr>
+        <tr>
+            <td>Excel</td>
+            <td>Intermedio</td>
+        </tr>
+        <tr>
+            <td>Ingles</td>
+            <td>Básico/Intermedio</td>
+        </tr>
+        <tr>
+            <td>Español</td>
+            <td>Nativo</td>
+        </tr>
+    </table>
+
+    <h2>Interacción</h2>
+    <input type="text" id="nombreInput" placeholder="Escribe tu nombre">
+    <button onclick="saludar()">Saludar</button>
+
+    <p id="mensaje"></p>
+
 </div>
+
+<script>
+function saludar() {
+    let nombre = document.getElementById("nombreInput").value;
+    document.getElementById("mensaje").innerText = "Hola " + nombre + " 👋";
+}
+</script>
+
 </body>
 </html>
